@@ -3,9 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
+
   <body>
-    <h1>Hello World</h1>
+    <header>
+      <img src="images/logo.png" alt="CCS logo" class="logo" />
+      <a href="tel:719-930-6606">(719) 930-6606</a>
+      <div class="container" onClick="{this.toggleClass}">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <div class="heroImage">
+      <form className="address-form" onSubmit="{this.onFormSubmit}">
+        <input
+          type="text"
+          value=""
+          placeholder="Enter street
+            address"
+        />
+        <button>Get your offer</button>
+      </form>
+    </div>
+    <div class="about">
+      <div class="book">
+        <h2>Colorado Capital Solutions</h2>
+      </div>
+    </div>
+
+    <div className="form"></div>
   </body>
 </html>
+
+<!-- toggleClass = () => {
+    const currentState = "container" ? "change" : "container";
+    this.setState({ menueToggle: currentState });
+  }; -->
