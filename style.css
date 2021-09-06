@@ -55,7 +55,7 @@ a {
 
 .heroImage {
   border: 1px solid black;
-  background: url(images/heroImage.jpg) no-repeat center center fixed;
+  background: url(heroImage.jpg) no-repeat center center fixed;
   background-size: cover;
   max-width: 100vw;
   height: 70vh;
@@ -74,60 +74,53 @@ h2 {
 }
 
 p {
-  margin-left: 9px;
-}
-
-* {
-  border: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  height: 54vh;
-  position: relative;
-  padding-top: 100px;
-}
-
-h2 {
-  font-size: 29px;
-}
-
-p {
   font-size: 25px;
 }
 
-.inputForm {
+.formContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  align-items: flex-end;
+  position: absolute;
   width: 100%;
-}
-
-.address-form {
-  width: 100vw;
-  bottom: 20px;
-}
-
-button {
-  width: 300px;
-  height: 50px;
-}
-
-input {
-  width: 300px;
-  height: 50px;
+  height: 70vh;
 }
 
 input,
-button {
-  text-align: center;
-  padding: 2;
-  margin: 10px auto 0 auto;
+label {
+  margin: 5px 5px;
+}
+
+.form-group {
+  margin: 30px auto;
+  width: 450px;
+}
+
+.form-control {
+  float: left;
+}
+
+#inputStreet {
+  width: 100%;
+}
+
+#inputCity {
+  width: 50%;
+}
+
+#inputState {
+  width: 15%;
+}
+
+#inputZip {
+  width: 28%;
+}
+
+#inputCounty {
+  width: 45%;
+}
+
+#inputCountry {
+  width: 50%;
 }
 
 /* @media only screen and (min-width: 620px) {
