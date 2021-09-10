@@ -123,6 +123,33 @@ label {
   width: 50%;
 }
 
+.box {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 4px 5px rgb(0, 0, 0, 0.3);
+  transform: translateX(200%);
+  transition: transform 0.4s ease;
+}
+
+.box img {
+  width: 400px;
+  height: 200px;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-200%);
+}
+
+.box.show {
+  transform: translateX(100px);
+}
+
 /* @media only screen and (min-width: 620px) {
   .address-form {
     display: flex;
