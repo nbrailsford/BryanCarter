@@ -4,28 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
-      integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+
     <title>Document</title>
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <img src="logo.png" alt="CCS logo" class="logo" />
-      <a href="tel:719-930-6606">(719) 930-6606</a>
-      <div class="container" onClick="{this.toggleClass}">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
+      <a class="phone" href="tel:719-930-6606">(719) 930-6606</a>
     </header>
 
     <div class="heroImage">
+      <h2>We will buy your house</h2>
+
       <div class="formContainer">
         <div class="form-group">
           <input
@@ -55,42 +46,45 @@
             id="inputZip"
             placeholder="Zip"
           />
-
-          <input
-            type="county"
-            class="form-control"
-            id="inputCounty"
-            placeholder="County"
-          />
-
-          <input
-            type="country"
-            class="form-control"
-            id="inputCountry"
-            placeholder="Country"
-          />
-          <button class="ui inverted orange button">Orange</button>
+          <button>Get My Free Offer</button>
         </div>
       </div>
     </div>
     <div class="about">
       <div class="book">
-        <h2>Colorado Capital Solutions</h2>
+        <h1>Colorado Capital Solutions</h1>
       </div>
     </div>
 
     <div class="box">
-      <h2><img src="weBuyHouses.jpeg" /></h2>
+      <img src="weBuyHouses.jpeg" />
+    </div>
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
     </div>
     <div class="box">
-      <h2><img src="sellYourHouse.jpeg" /></h2>
+      <img src="sellYourHouse.jpeg" />
     </div>
+    <div class="text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      </p>
+    </div>
+    <footer>
+      <ul>
+        <li>facebook</li>
+        <li>instagram</li>
+        <li>contact</li>
+      </ul>
+    </footer>
   </body>
   <script src="scroll-in-loading.js"></script>
   <script src="input.js"></script>
 </html>
-
-<!-- toggleClass = () => {
-    const currentState = "container" ? "change" : "container";
-    this.setState({ menueToggle: currentState });
-  }; -->
